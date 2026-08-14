@@ -1,0 +1,16 @@
+[project]
+name = "agent-gc"
+version = "0.1.0"
+description = "Garbage collection for AI agents — find and remove unused or stale workflows before they become technical debt."
+authors = [{ name = "Nadia Rodgers" }]
+requires-python = ">=3.10"
+
+dependencies = [
+    "pydantic",
+    "psutil",
+    "pytest",
+    "typer"
+]
+
+[project.scripts]
+agent-gc = "app.main:app"
